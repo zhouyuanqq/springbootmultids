@@ -1,3 +1,4 @@
+/*
 package com.uas.multids;
 
 import org.springframework.beans.factory.FactoryBean;
@@ -78,3 +79,4 @@ public class DataSourceFactory implements FactoryBean<javax.sql.DataSource> {
         return true;
     }
 }
+*/

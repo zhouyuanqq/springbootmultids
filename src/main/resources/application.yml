@@ -1,0 +1,31 @@
+spring:
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driverClassName: oracle.jdbc.OracleDriver
+        url: jdbc:oracle:thin:@192.168.253.6:1521:orcl
+        username: uas
+        password: select!#%*(
+    http:
+        encoding:
+            force: true
+            charset: UTF-8
+            enabled: true
+    message:
+        encoding: UTF-8
+    jpa:
+      show-sql: false
+      hibernate:
+        ddl-auto: update
+      database: oracle
+
+server:
+    tomcat:
+        uri_encoding: UTF-8
+    port: 8008
+    context-path: /EIS
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace

@@ -77,7 +77,20 @@ public class DataSource implements Serializable{
     /**
      * 生成beanID
      * */
-    private String getBeanId(){
+    public String getBeanId(){
         return this.id+"_"+this.getUsername();
+    }
+
+    @Override
+    public String toString() {
+        return "DataSource{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", username='" + username + '\'' +
+                ", driverclass='" + driverclass + '\'' +
+                ", port=" + port +
+                ", password='" + password + '\'' +
+                ", url='" + url + '\'' +
+                '}';
     }
 }
